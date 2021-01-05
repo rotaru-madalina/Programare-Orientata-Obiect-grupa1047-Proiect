@@ -140,9 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Magazin.cpp" />
+    <ClCompile Include="Produs.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="InterfataDiscount.h" />
     <ClInclude Include="Magazin.h" />
+    <ClInclude Include="Produs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

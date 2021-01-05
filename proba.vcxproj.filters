@@ -18,9 +18,18 @@
     <ClCompile Include="Magazin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Produs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Magazin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Produs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfataDiscount.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
