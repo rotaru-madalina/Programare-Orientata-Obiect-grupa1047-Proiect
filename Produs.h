@@ -38,7 +38,7 @@ public:
 
 	void operator()(int valoare);
 
-	void adaugareProdus(double produs);
+	//void adaugareProdus(double produs);
 
 	friend ostream& operator<<(ostream& iesire, Produs& p); //pe ecran
 
