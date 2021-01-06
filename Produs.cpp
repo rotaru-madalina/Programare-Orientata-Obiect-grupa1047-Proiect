@@ -77,7 +77,7 @@ const Produs Produs::operator++(int)
 	return aux;
 }
 
-bool Produs::operator==(Produs& produs)
+/*bool Produs::operator==(Produs& produs)
 {
 	if (this == &produs) {
 		return true;
@@ -97,7 +97,7 @@ bool Produs::operator==(Produs& produs)
 		return true;
 	}
 	return false;
-}
+}*/
 
 char& Produs::operator[](int index)
 {
@@ -110,7 +110,7 @@ char& Produs::operator[](int index)
 	}
 }
 
-void Produs::operator()(int valoare)
+/*void Produs::operator()(int valoare)
 {
 	if (valoare >= 15 && valoare <= 30) {
 		for (int i = 0;i < cantitate;i++) {
@@ -120,7 +120,7 @@ void Produs::operator()(int valoare)
 	else {
 		throw new exception("Eroare: nu poti creste un pret cu >30 lei");
 	}
-}
+}*/
 
 void Produs::scrieInFisierBinar(ofstream& iesire)
 {

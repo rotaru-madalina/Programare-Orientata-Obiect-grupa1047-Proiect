@@ -141,16 +141,25 @@
   <ItemGroup>
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Comanda.cpp" />
+    <ClCompile Include="Electrocasnice.cpp" />
+    <ClCompile Include="Laptop.cpp" />
     <ClCompile Include="Magazin.cpp" />
     <ClCompile Include="Produs.cpp" />
+    <ClCompile Include="Program_principal.cpp" />
+    <ClCompile Include="Tablete.cpp" />
+    <ClCompile Include="Telefoane.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h" />
     <ClInclude Include="Comanda.h" />
+    <ClInclude Include="Electrocasnice.h" />
     <ClInclude Include="InterfataDiscount.h" />
     <ClInclude Include="InterfataValoareComanda.h" />
+    <ClInclude Include="Laptop.h" />
     <ClInclude Include="Magazin.h" />
     <ClInclude Include="Produs.h" />
+    <ClInclude Include="Tablete.h" />
+    <ClInclude Include="Telefoane.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

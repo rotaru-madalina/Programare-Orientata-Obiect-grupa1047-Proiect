@@ -27,6 +27,21 @@
     <ClCompile Include="Comanda.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Electrocasnice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Laptop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tablete.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Telefoane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Program_principal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Magazin.h">
@@ -45,6 +60,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InterfataValoareComanda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Electrocasnice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Laptop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tablete.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Telefoane.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -32,11 +32,11 @@ public:
 
 	const Produs operator++(int); //operator ++ post-incrementat pt cantitate
 
-	bool operator==(Produs& produs); //apare o eroare aici
+	//bool operator==(Produs& produs); //apare o eroare aici
 
 	char& operator[](int index); //operator []
 
-	void operator()(int valoare);
+	//void operator()(int valoare);
 
 	//void adaugareProdus(double produs);
 
@@ -52,4 +52,3 @@ public:
 
 	double calculeazaPretDupaDiscount(double discount);
 };
-
