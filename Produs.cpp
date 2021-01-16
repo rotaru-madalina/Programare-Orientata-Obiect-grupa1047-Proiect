@@ -169,6 +169,23 @@ ostream& operator<<(ostream& iesire, Produs& p)
 	return iesire;
 }
 
+istream& operator>>(istream& citire, Produs& p)
+{
+	char aux[100];
+	cout << "Cod Produs:"; citire >> p.cod_pr;
+
+	cout << "Denumire produs:"; citire >> aux;
+	delete[] p.den_pr;
+	p.den_pr = new char[strlen(aux) + 1];
+	strcpy_s(p.den_pr, strlen(aux) + 1, aux);
+
+	cout << "Pret:"; citire >> p.pret;
+	cout << "Cantitate:"; citire >> p.cantitate;
+
+	return citire;
+
+}
+
 ofstream& operator<<(ofstream& iesire, Produs& p)
 {
 	iesire << p.cod_pr << endl << p.pret << endl

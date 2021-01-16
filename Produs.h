@@ -15,6 +15,7 @@ public:
 	float pret;
 	char* den_pr;
 	int cantitate;
+	//int nr_pr_dif = 0; //nr de produse diferite tine cont de cod_pr
 
 	Produs(); //constructor default
 
@@ -41,6 +42,8 @@ public:
 	//void adaugareProdus(double produs);
 
 	friend ostream& operator<<(ostream& iesire, Produs& p); //pe ecran
+
+	friend istream& operator>>(istream& citire, Produs& p); //citire de la tastatura
 
 	friend ofstream& operator<<(ofstream& iesire, Produs& p); //in fisier
 
