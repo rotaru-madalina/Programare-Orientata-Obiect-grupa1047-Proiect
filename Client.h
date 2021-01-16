@@ -30,6 +30,8 @@ public:
 
 	friend ostream& operator<<(ostream& iesire, Client& c); //pe ecran
 
+	friend istream& operator>>(istream& citire, Client& c); //citire de la tastatura
+
 	char* getNume();
 	void setNume(char* nume);
 

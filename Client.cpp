@@ -184,3 +184,27 @@ ostream& operator<<(ostream& iesire, Client& c)
 
 	return iesire;
 }
+
+istream& operator>>(istream& citire, Client& c)
+{
+	char aux1[100], aux2[100];
+	cout << "Cod client:"; citire >> c.cod_cl;
+
+	cout << "Nume client:"; citire >> aux1;
+	delete[] c.nume;
+	c.nume = new char[strlen(aux1) + 1];
+	strcpy_s(c.nume, strlen(aux1) + 1, aux1);
+
+	cout << "Nr produse comandate:"; citire >> c.nr_pr;
+	cout << "Data comenzii:"; citire >> c.data_com;
+
+	cout << "Telefon client:"; citire >> aux2;
+	delete[] c.tel;
+	c.tel = new char[strlen(aux2) + 1];
+	strcpy_s(c.tel, strlen(aux2) + 1, aux2);
+
+	cout << "Mail client:"; citire >> c.mail;
+	cout << "Adresa client:"; citire >> c.adresa;
+
+	return citire;
+}
