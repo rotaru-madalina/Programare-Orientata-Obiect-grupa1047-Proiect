@@ -26,6 +26,8 @@ public:
 
 	friend ostream& operator<<(ostream& iesire, Magazin& m); //pe ecran
 
+	friend istream& operator>>(istream& citire, Magazin& m); //citire de la tastatura
+
 	friend ofstream& operator<<(ofstream& iesire, Magazin& m); //in fisier
 
 	friend ifstream& operator>>(ifstream& citire, Magazin& m); //din fisier

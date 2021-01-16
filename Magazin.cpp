@@ -106,6 +106,22 @@ ostream& operator<<(ostream& iesire, Magazin& m)
 	return iesire;
 }
 
+istream& operator>>(istream& citire, Magazin& m)
+{
+	char aux[100];
+	cout << "Cod Magazin:"; citire >> m.cod_mag;
+	cout << "Denumire magazin:"; citire >> m.den_mag;
+
+	cout << "Locatie magazin:"; citire >> aux;
+	delete[] m.loc;
+	m.loc = new char[strlen(aux) + 1];
+	strcpy_s(m.loc, strlen(aux) + 1, aux);
+
+	cout << "Nr angajati:"; citire >> m.nr_ang;
+
+	return citire;
+}
+
 ofstream& operator<<(ofstream& iesire, Magazin& m)
 {
 	iesire << m.cod_mag << endl << m.den_mag << endl 
