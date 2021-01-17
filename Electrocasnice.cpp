@@ -1,6 +1,6 @@
 #include "Electrocasnice.h"
 
-Electrocasnice::Electrocasnice() :Produs(cod_pr, pret, den_pr, cantitate)
+Electrocasnice::Electrocasnice() 
 {
 	this->kW = 0;
 }
@@ -29,10 +29,27 @@ Electrocasnice::~Electrocasnice()
 {
 }
 
-/*ostream& operator<<(ostream& iesire, Electrocasnice e)
+double Electrocasnice::calculeazaPretDupaDiscount(double discount)
+{
+	cout << "Discount din electrocasnice" << endl;
+	pret -= pret * discount / 100 + 30;
+		return pret;
+		
+
+}
+
+ostream& operator<<(ostream& iesire, Electrocasnice e)
 {
 	iesire << "Electrocasnicul: ";
-	iesire << (Produs)e;
-	iesire << "Are consumul electric: " << e.kW;
+	iesire << (Produs) e;
+	iesire << "Are consumul electric: " << e.kW<<" W.";
 	return iesire;
-}*/
+}
+
+istream& operator>>(istream& ios, Electrocasnice& e)
+{
+	ios >> (Produs&)e;
+	cout << "Consumul electric: ";
+	ios >> e.kW;
+	return ios;
+}

@@ -9,28 +9,27 @@ class Tablete :
 {
 
     float* dim;
-public:
+ public:    
     int inch;
 
     Tablete();
 
-    Tablete(int cod_pr, float pret, const char* den_pr, int cantitate,
-        int inch, float* dim);
+    Tablete(int cod_pr, float pret, const char* den_pr, int cantitate,int inch,float * dim);
 
 
-    Tablete(const Tablete& t);
+    Tablete(const Tablete& t) ;
 
     Tablete& operator=(Tablete& t);
 
     ~Tablete();
-    float* getDimensiune();
+    int getCod();
 
     void setDimensiuni(float* dim, int inch);
     friend ostream& operator <<(ostream& out, Tablete t);
-    // friend istream& operator>>(istream& ios, Tablete& t);
-
-    // Tablete& operator[](int index);
-
+    friend istream& operator>>(istream& ios, Tablete& t);
+    double calculeazaPretDupaDiscount(double discount);
+  
+   
 
 };
 

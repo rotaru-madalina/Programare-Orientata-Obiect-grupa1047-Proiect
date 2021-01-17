@@ -1,5 +1,4 @@
 #pragma once
-#include<iostream>
 #include "Produs.h"
 
 using namespace std;
@@ -11,9 +10,9 @@ public:
     float kW;
     Electrocasnice();
 
-    //  Produs(int cod_pr, float pret, const char* den_pr, int cantitate)
+  //  Produs(int cod_pr, float pret, const char* den_pr, int cantitate)
 
-    Electrocasnice(int cod_pr, float pret, const char* den_pr, int cantitate, float kW);
+    Electrocasnice(int cod_pr, float pret,const char* den_pr, int cantitate,float kW);
 
     Electrocasnice(const Electrocasnice& e);
 
@@ -22,6 +21,7 @@ public:
     ~Electrocasnice();
 
     friend ostream& operator <<(ostream& out, Electrocasnice e);
-    //friend istream& operator>>(istream& ios, Electrocasnice& e);
-
+    friend istream& operator>>(istream& ios, Electrocasnice& e);
+    double calculeazaPretDupaDiscount(double discount);
 };
+
