@@ -40,9 +40,8 @@ double Electrocasnice::calculeazaPretDupaDiscount(double discount)
 
 ostream& operator<<(ostream& iesire, Electrocasnice e)
 {
-	iesire << "Electrocasnicul: ";
-	iesire << (Produs) e;
-	iesire << "Are consumul electric: " << e.kW<<" W.";
+	iesire << (Produs&) e; //daca e vreo eroare sterge &
+	iesire << "Are consumul electric: " << e.kW<<" W."<<endl;
 	return iesire;
 }
 
@@ -52,4 +51,9 @@ istream& operator>>(istream& ios, Electrocasnice& e)
 	cout << "Consumul electric: ";
 	ios >> e.kW;
 	return ios;
+}
+
+void Electrocasnice::setkW(float kW)
+{
+	this->kW = kW;
 }
