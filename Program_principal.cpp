@@ -57,12 +57,12 @@ int main()
 	l2.setCod(1234);
 	char den[] = { "Laptop Asus" };
 	l2.setDenumire(den);
-	l2.setMemorie(32);
+	l2.setmem_l(32);
 	l2.setPret(1259.99);
 	char proc[] = { "Intel Celeron " };
-	l2.setProcesor(proc);
+	l2.setprocesor(proc);
 	char so[] = { "Windows 10 Pro" };
-	l2.setSO(so);
+	l2.setso_l(so);
 	cout << "l2 dupa setteri: " << endl << l2 << endl;
 	cin >> l6;
 	cout << "Operator>>: " << endl << l6;
