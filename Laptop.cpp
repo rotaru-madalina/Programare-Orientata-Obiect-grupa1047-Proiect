@@ -102,7 +102,7 @@ void Laptop::setDenumire(char* den_pr)
 	}
 }
 
-void Laptop::setSO(char* so_l)
+void Laptop::setso_l(char* so_l)
 {
 
 		if (so_l != nullptr) {
@@ -117,7 +117,7 @@ void Laptop::setSO(char* so_l)
 
 }
 
-void Laptop::setProcesor(char* procesor)
+void Laptop::setprocesor(char* procesor)
 {
 	if (procesor!= nullptr) {
 		delete[] this->procesor;
@@ -130,7 +130,7 @@ void Laptop::setProcesor(char* procesor)
 	}
 }
 
-void Laptop::setMemorie(int mem_l)
+void Laptop::setmem_l(int mem_l)
 {
 	this->mem_l = mem_l;
 }
