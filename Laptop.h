@@ -25,9 +25,9 @@ public:
     void setCod(int cod_pr);
     void setPret(float pret);
     void setDenumire(char* den_pr);
-    void setSO(char* so_l);
-    void setProcesor(char* procesor);
-    void setMemorie(int mem_l);
+    void setso_l(char* so_l);
+    void setprocesor(char* procesor);
+    void setmem_l(int mem_l);
     friend ostream& operator <<(ostream& out, Laptop l);
     friend istream& operator>>(istream& ios, Laptop& l);
     
