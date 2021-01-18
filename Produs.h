@@ -37,7 +37,7 @@ public:
 
 	char& operator[](int index); //operator []
 
-	//void operator()(int valoare);
+	void operator()(int valoare);
 
 	//void adaugareProdus(double produs);
 
