@@ -110,17 +110,16 @@ char& Produs::operator[](int index)
 	}
 }
 
-/*void Produs::operator()(int valoare)
+void Produs::operator()(int valoare)
 {
 	if (valoare >= 15 && valoare <= 30) {
-		for (int i = 0;i < cantitate;i++) {
-			pret[i] += valoare;
-		}
+		pret += valoare;
+		
 	}
 	else {
 		throw new exception("Eroare: nu poti creste un pret cu >30 lei");
 	}
-}*/
+}
 
 void Produs::scrieInFisierBinar(ofstream& iesire)
 {
@@ -214,3 +213,62 @@ ifstream& operator>>(ifstream& citire, Produs& p)
 
 	return citire;
 }
+
+int Produs::getcod_pr()
+{
+	return cod_pr;
+}
+
+void Produs::setcod_pr(int cod_pr)
+{
+	this->cod_pr = cod_pr;
+}
+
+float Produs::getpret()
+{
+	return pret;
+}
+
+void Produs::setpret(float pret) {
+	this->pret = pret;
+}
+
+void Produs::setden_pr(char* den_pr)
+{
+	if (den_pr != nullptr) {
+		delete[] this->den_pr;
+		this->den_pr = new char[strlen(den_pr) + 1];
+		strcpy_s(this->den_pr, strlen(den_pr) + 1, den_pr);
+	}
+	else
+	{
+		throw new exception("Denumirea produsului este nullptr.");
+	}
+}
+
+
+int Produs::getcantitate()
+{
+	return cantitate;
+}
+
+void Produs::setcantitate(int cantitate)
+{
+	this->cantitate = cantitate;
+}
+
+template <class Produs> class Vector{
+private:
+	int nrprod;
+	Produs* produse;
+
+public:
+	Produs operator[](int index) {
+		if (index >= 0 && index < nrprod) {
+			return produse[index];
+		}
+		else {
+			throw new exception("bad index in op[]!");
+		}
+	}
+};
