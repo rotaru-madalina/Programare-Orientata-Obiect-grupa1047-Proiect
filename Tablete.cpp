@@ -55,6 +55,10 @@ int Tablete::getCod()
 	return cod_pr;
 }
 
+float* Tablete::getDimensiune()
+{
+	return dim;
+}
 
 void Tablete::setDimensiuni(float* dim, int inch)
 {
@@ -85,16 +89,25 @@ double Tablete::calculeazaPretDupaDiscount(double discount)
 
 ostream& operator<<(ostream& out, Tablete t)
 {
-	
-		out << "\t Tableta: " << endl;
-		out << (Produs)t;
-		out << "Are nr dim in inch: " << t.inch << ", asadar are urmatoarele dimensiuni:" <<endl;
-		for (int i = 0;i < t.inch;i++)
+	out << (Produs&)t;
+	out << "\n\t  Diagonala display: " << t.inch << " inch\n\t  Dimensiuni:";
+	for (int i = 0;i < 3;i++)
+	{
+		if (i == 0)
 		{
-			out << "Dimensiunea " << i + 1 << ":" << t.dim[i] << endl;
+			out << "\n\t   Inaltime: " << t.dim[i] << " inch";
 		}
-		return out;
-	
+		if (i == 1)
+		{
+			out << "\n\t   Latime: " << t.dim[i] << " inch";
+		}
+		if (i == 2)
+		{
+			out << "\n\t   Grosime: " << t.dim[i] << " inch";
+		}
+	}
+	return out;
+
 }
 
 istream& operator>>(istream& ios, Tablete& t)
