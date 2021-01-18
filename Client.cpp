@@ -90,6 +90,10 @@ Client& Client::operator=(const Client& c)
 	}
 	return *this;
 }
+int Client::getcod_cl() 
+{
+	return cod_cl;
+}
 
 char* Client::getNume()
 {
