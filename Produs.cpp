@@ -161,9 +161,8 @@ double Produs::calculeazaPretDupaDiscount(double discount)
 
 ostream& operator<<(ostream& iesire, Produs& p)
 {
-	iesire << "Cod produs: " << p.cod_pr << " pret pr.: "
-		<< p.pret << " denumire pr.: " << p.den_pr
-		<< " cantitate: " << p.cantitate << endl;
+	iesire << "\t  Cod produs: " << p.cod_pr << "\n\t  Denumire: " << p.den_pr << "\n\t  Pret: "
+		<< p.pret << " lei" << "\n\t  Cantitate: " << p.cantitate << " bucati";
 
 	return iesire;
 }
