@@ -120,10 +120,9 @@ double Telefoane::calculeazaPretDupaDiscount(double discount)
 
 ostream& operator<<(ostream& out, Telefoane tl)
 {
-    out << "\t Telefonul:" << endl;
-    out << (Produs)tl;
-    out << "Are sistemul de operare: " << tl.so_t << ",camera: "<<tl.camera<<" MP"<<", sticla: "<<tl.sticla<<", procesorul: " << tl.procesor 
-        << " si capacitatea memoriei este: " << tl.mem_t<<" GB"<<endl;
+    out << (Produs&)tl;
+    out << "\n\t  Sistem de operare: " << tl.so_t << "\n\t  Rezolutie camera: " << tl.camera << " Mpx\n\t  Tip sticla: " << tl.sticla << "\n\t  Procesor: "
+        << tl.procesor << "\n\t  Capacitate memorie: " << tl.mem_t << " GB" << endl;
     return out;
 }
 
