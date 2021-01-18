@@ -32,6 +32,8 @@ public:
 
 	friend istream& operator>>(istream& citire, Client& c); //citire de la tastatura
 
+	int getcod_cl();
+	
 	char* getNume();
 	void setNume(char* nume);
 
