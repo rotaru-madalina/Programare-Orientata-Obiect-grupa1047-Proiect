@@ -29,7 +29,7 @@ class Tablete :
     friend istream& operator>>(istream& ios, Tablete& t);
     double calculeazaPretDupaDiscount(double discount);
   
-   
+    float* getDimensiune();
 
 };
 
