@@ -145,9 +145,8 @@ double Laptop::calculeazaPretDupaDiscount(double discount)
 
 ostream& operator<<(ostream& out, Laptop l)
 {
-	out << "\t Laptop:" << endl;
-	out << (Produs)l;
-	out << "Are sistemul de operare:" << l.so_l << ", preocesorul:" << l.procesor << " si capacitatea memoriei este:" << l.mem_l<<" GB.";
+	out << (Produs&)l;
+	out << "\n\t  Sistem de operare:" << l.so_l << "\n\t  Procesor:" << l.procesor << "\n\t  Capacitate memorie:" << l.mem_l << " GB" << endl;
 	return out;
 }
 
