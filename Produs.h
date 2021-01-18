@@ -54,4 +54,18 @@ public:
 	void citireDinFisierBinar(ifstream& citire);
 
 	double calculeazaPretDupaDiscount(double discount);
+	
+	int getcod_pr();
+
+	int getcantitate();
+
+	float getpret();
+
+	void setcod_pr(int cod_pr);
+
+	void setpret(float pret);
+
+	void setden_pr(char* den_pr);
+
+	void setcantitate(int cantitate);
 };
